@@ -1,5 +1,5 @@
-interface AggregateError extends Error {
-    errors: any[];
+interface AggregateError<T extends any = any> extends Error {
+    errors: T[];
 }
 
 interface AggregateErrorConstructor {
